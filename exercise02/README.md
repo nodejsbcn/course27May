@@ -2,7 +2,7 @@
 ## 2.1. Run this command
 
 ```sh
-slc loopback
+$ slc loopback
 ```
 
 ## 2.2. You'll be asked for a project name. Enter "sendacrow".

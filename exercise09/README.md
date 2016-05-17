@@ -33,4 +33,4 @@ It's a relationship of type has-many.
 ## 9.5. Run the application
 You'll find the relationships in each model.
 
-![Relationship](https://raw.githubusercontent.com/nodejsbcn/course27May/master/exercise09/screenshots/screenshot10.png)
+![Relationship](https://raw.githubusercontent.com/nodejsbcn/course27May/master/exercise09/screenshots/screenshot05.png)

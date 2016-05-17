@@ -1,0 +1,15 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mongo": {
+    "host": "ds011432.mlab.com",
+    "port": 11432,
+    "database": "sendacrow",
+    "password": "${SENDACROW_PASSWORD}",
+    "name": "mongo",
+    "user": "${SENDACROW_USER}",
+    "connector": "mongodb"
+  }
+}

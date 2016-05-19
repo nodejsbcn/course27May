@@ -37,5 +37,5 @@ Those are the Operation hooks invoked by PersistedModel
 ![Operation hooks](https://raw.githubusercontent.com/nodejsbcn/course27May/master/exercise10/screenshots/screenshot02.png)
 
 Accessing the affected instance
-![Affected instance](https://raw.githubusercontent.com/nodejsbcn/course27May/master/exercise10/screenshots/screenshot04.png)
+![Affected instance](https://raw.githubusercontent.com/nodejsbcn/course27May/master/exercise10/screenshots/screenshot03.png)
 

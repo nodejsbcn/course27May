@@ -27,3 +27,6 @@ https://github.com/nodejsbcn/course27May/tree/master/exercise08
 
 ## 9. Adding relations
 https://github.com/nodejsbcn/course27May/tree/master/exercise09
+
+## 10. Adding hooks
+https://github.com/nodejsbcn/course27May/tree/master/exercise10

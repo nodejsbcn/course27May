@@ -33,3 +33,6 @@ https://github.com/nodejsbcn/course27May/tree/master/exercise10
 
 ## 11. Adding security
 https://github.com/nodejsbcn/course27May/tree/master/exercise11
+
+## 12. Adding whoami
+https://github.com/nodejsbcn/course27May/tree/master/exercise12

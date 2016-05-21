@@ -1,0 +1,33 @@
+<div ng-controller="PersonController" class="container">
+	<div class="alert alert-success" ng-show="personSaved" role="alert">{{successMessage}}</div>
+	<div class="row">
+		<div class="hidden-xs col-md-3 col-sm-4 persons-title">
+			<h2>PERSONS</h2>
+			<div class="col-xs-12 panel-separator"></div>
+			<div ng-repeat="user in users">
+				{{user.nickname}}
+				<button type="button" class="btn btn-sm" ng-click="getPerson(user.id)">Get Person Data</button>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="hidden-xs col-md-3 col-sm-4 persons-title">
+			<h2>Individual person</h2>
+			<div class="col-xs-12 panel-separator"></div>
+				{{person.name}}
+				{{person.nickname}}
+				{{person.email}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="insert-title">
+			<h2>Insert Person</h2>
+			<div class="col-xs-3 panel-separator">
+			<input type="text" ng-model="personName" />
+			<input type="text" ng-model="personNick" />
+			<input type="text" ng-model="personEmail" />
+			<button type="button" class="btn btn-sm" ng-click="savePerson()">Save Person</button>
+			</div>
+		</div>
+	</div>
+</div>

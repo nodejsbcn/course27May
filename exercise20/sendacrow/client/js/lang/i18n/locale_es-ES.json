@@ -1,0 +1,9 @@
+﻿{
+	"USERNAME": "Nombre de usuario",
+	"PASSWORD": "Contraseña",
+	"REQUIRED": "Este campo es obligatorio",
+	"LOGIN": "Acceder",
+	"FORGOT": "¿Has olvidado tu contraseña?",
+	"OR": "o",
+	"SIGNUP": "Regístrate"
+}

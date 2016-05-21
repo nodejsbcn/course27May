@@ -37,7 +37,7 @@ Also, add the code for the hook
         if (!ctx.args.filter) {
             ctx.args.filter = {};
         }
-        ctx.args.filter.include = { relation: "responses" };
+        ctx.args.filter.include = [ "responses", "author" ];
         if (!ctx.args.filter.where) {
             ctx.args.filter.where = {};
         }

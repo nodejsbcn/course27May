@@ -1,0 +1,35 @@
+{
+  "name": "Message",
+  "plural": "Messages",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "responses": {
+      "type": "hasMany",
+      "model": "Message",
+      "foreignKey": "parentId"
+    },
+    "parent": {
+      "type": "belongsTo",
+      "model": "Message",
+      "foreignKey": "parentId"
+    },
+    "author": {
+      "type": "belongsTo",
+      "model": "Person",
+      "foreignKey": "authorId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

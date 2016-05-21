@@ -30,3 +30,6 @@ https://github.com/nodejsbcn/course27May/tree/master/exercise09
 
 ## 10. Adding hooks
 https://github.com/nodejsbcn/course27May/tree/master/exercise10
+
+## 10. Adding security
+https://github.com/nodejsbcn/course27May/tree/master/exercise11

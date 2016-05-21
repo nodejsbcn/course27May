@@ -36,3 +36,6 @@ https://github.com/nodejsbcn/course27May/tree/master/exercise11
 
 ## 12. Adding whoami
 https://github.com/nodejsbcn/course27May/tree/master/exercise12
+
+## 13. Filter and formatting responses
+https://github.com/nodejsbcn/course27May/tree/master/exercise13

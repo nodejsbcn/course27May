@@ -15,4 +15,33 @@ module.exports = function(Person) {
        body.created = now_utc;
        next(); 
     });
+    
+    Person.whoami = function(callback) {
+        callback();
+    }
+    
+    function getAuthenticationError() {
+      var error = new Error();
+      error.statusCode = 401;
+      error.message = 'Authorization Required';
+      error.code = 'AUTHORIZATION_REQUIRED';
+      return error;        
+    }
+    
+    Person.afterRemote('whoami', function(context, model, next) {
+        var userId = context.req.accessToken.userId;
+        if (!userId) {
+            return next(getAuthenticationError());
+        }
+        Person.findOne({ where: { id: userId}}, function(error, item) {
+            if (error) {
+                return next(error);
+            }
+            if (!item) {
+                return next(getAuthenticationError());
+            }
+            context.result = item;
+            next();
+        })
+    });
 };

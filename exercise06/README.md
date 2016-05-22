@@ -22,7 +22,7 @@ Loopback allows you to use environment variables with the format *${VARIABLE_NAM
 ### 6.1.6. Run your app to check that is able to connect 
 ![Run app](https://raw.githubusercontent.com/nodejsbcn/course27May/master/exercise06/screenshots/screenshot07.png)
 ## 6.2. Deployment to Heroku
-### 6.2.1. Register and login into Heroku: https://mlab.com
+### 6.2.1. Register and login into Heroku: http://www.heroku.com
 ![Heroku dashboard](https://raw.githubusercontent.com/nodejsbcn/course27May/master/exercise06/screenshots/screenshot08.png)
 ### 6.2.2. Create a new app
 ![Create heroku app](https://raw.githubusercontent.com/nodejsbcn/course27May/master/exercise06/screenshots/screenshot09.png)

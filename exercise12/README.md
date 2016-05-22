@@ -7,7 +7,7 @@ We made a way to authenticate and authorizate a user. But we still don't have a 
 We can add remote methods using *slc loopback:remote-method*. In this case we will add the endpoint */whoami* with no parameters and returns an object.
 
 ![Add whoami 1](https://raw.githubusercontent.com/nodejsbcn/course27May/master/exercise12/screenshots/screenshot01.png)
-![Add whoami 2](https://raw.githubusercontent.com/nodejsbcn/course27May/master/exercise12/screenshots/screenshot01.png)
+![Add whoami 2](https://raw.githubusercontent.com/nodejsbcn/course27May/master/exercise12/screenshots/screenshot02.png)
 
 You'll find the information of the method created at *person.json*
 

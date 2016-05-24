@@ -1,6 +1,9 @@
 # course27May
 NodeJS+Strongloop course at NodeJS Barcelona Meetup (27 May 2016)
 
+You can see the video presentation here:
+http://www.screencast.com/t/ZkW2wzrdY
+
 ## 1. Installation
 https://github.com/nodejsbcn/course27May/tree/master/exercise01
 
@@ -33,3 +36,9 @@ https://github.com/nodejsbcn/course27May/tree/master/exercise10
 
 ## 11. Adding security
 https://github.com/nodejsbcn/course27May/tree/master/exercise11
+
+## 12. Adding whoami
+https://github.com/nodejsbcn/course27May/tree/master/exercise12
+
+## 13. Filter and formatting responses
+https://github.com/nodejsbcn/course27May/tree/master/exercise13

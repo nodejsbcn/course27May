@@ -2,7 +2,8 @@
 
 ## 3.1. Install the mongodb connector.
 
-To do this, use the command *npm install* inside the project folder, with the option *--save* so the connector is also added to the *package.json*. 
+To do this, use the command *npm install* inside the project folder, with the option *--save* so the connector is also added to the *package.json*.
+Or you can skip this step, because when defining the datasource it will automatically install the datasource if you want. 
 
 ```sh
 $ cd sendacrow

@@ -39,3 +39,17 @@ Those are the Operation hooks invoked by PersistedModel
 Accessing the affected instance
 ![Affected instance](https://raw.githubusercontent.com/nodejsbcn/course27May/master/exercise10/screenshots/screenshot03.png)
 
+## 10.5. Hooks to the call to the method *create* of the relation *messages* of a *Person*
+We want that the messages created using the endpoints of the relation of Person with Message also put a created field into the mesage.
+We edit *person.js*
+
+```javascript
+    Person.beforeRemote('*.__create__messages', function(ctx, instance, next) {
+       var body = ctx.args.data;
+       var now = new Date();
+       var now_utc = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(),  now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
+       body.created = now_utc;
+       console.log(body)
+       next(); 
+    });
+```

@@ -1,0 +1,35 @@
+@mixin border($size: 1px, $style: solid, $color: black) {
+	border: $size $style $color;
+}
+
+@mixin color($color: black) {
+	color: $color;
+}
+
+@mixin text-align($align: right) {
+	text-align: $align;
+}
+
+@mixin margin($top: 0, $right: 0, $left: 0, $bottom: 0) {
+	margin: $top $right $left $bottom;
+}
+
+@mixin shorthand-margin($value: 0) {
+	margin: $value;
+}
+
+@mixin padding($top: 0, $right: 0, $left: 0, $bottom: 0) {
+	padding: $top $right $left $bottom;
+}
+
+@mixin shorthand-padding($value: 0) {
+	padding: $value;
+}
+
+@mixin vendor-prefix($property, $value) {
+	#{$property}: $value;
+  	-webkit-#{$property}: $value;
+  	-ms-#{$property}: $value;
+  	-moz-#{$property}: $value;
+  	-o-#{$property}: $value;
+}

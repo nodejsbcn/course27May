@@ -1,0 +1,37 @@
+.cookies-container {
+
+	background: #60747C;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	padding: 0;
+	z-index: 120;
+
+	.cookies-content {
+		margin: 1em;
+
+		button {
+			font-size: 0.7em;
+			border-radius: 0;
+		}
+
+		.cookies-text {
+			margin-top: 0.4em;
+		}
+
+		a {
+			color: white;
+			font-size: 1em;
+			text-decoration:underline;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		.cookies-text {
+			margin-bottom: 1em;
+		}
+	}
+}

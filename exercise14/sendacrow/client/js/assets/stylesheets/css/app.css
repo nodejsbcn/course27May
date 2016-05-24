@@ -1,0 +1,224 @@
+/* Vemdors */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,600,700);
+@import url(http://fonts.googleapis.com/css?family=Muli:400,400italic);
+/* line 1, ../sass/includes/body.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, ../sass/includes/body.scss */
+body {
+  font-family: "Open Sans", 'Titillium Web', 'Muli', Arial, Helvetica, Sans-Serif;
+  font-size: 13px !important;
+  line-height: 1.42857143;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../sass/includes/body.scss */
+button, a, input, select, .btn {
+  border-radius: 0;
+}
+
+/* line 18, ../sass/includes/body.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: gray;
+}
+
+/* line 22, ../sass/includes/body.scss */
+label {
+  font-weight: normal;
+  color: gray;
+}
+
+/* line 27, ../sass/includes/body.scss */
+.field-box {
+  width: 100%;
+  height: 2.4em;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  padding: 0.5em 0 0 0;
+  margin: 0 0 0.5em 0;
+  border: 1px solid transparent;
+  background-color: #5cb85c;
+  border: 1px solid #4cae4c;
+}
+
+/* line 40, ../sass/includes/body.scss */
+.field-box-green {
+  color: #fff;
+  background-color: #5cb85c;
+  border: 1px solid #4cae4c;
+}
+
+/* line 46, ../sass/includes/body.scss */
+.field-box-blue {
+  color: #fff;
+  background-color: #3071a9;
+  border: 1px solid #285e8e;
+}
+
+/* line 52, ../sass/includes/body.scss */
+.angular-google-map-container {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translateZ(0px);
+  background-color: #e5e3df;
+  height: 400px;
+}
+
+/* line 60, ../sass/includes/body.scss */
+.gridStyle {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translateZ(0px);
+  height: 250px;
+}
+
+/* line 67, ../sass/includes/body.scss */
+.visibility-chart {
+  visibility: hidden;
+}
+
+/* line 71, ../sass/includes/body.scss */
+.spinner, .spinnerStyle {
+  position: fixed;
+  z-index: 106;
+  top: 50%;
+  right: 50%;
+}
+
+/* Parts */
+/* line 3, ../sass/includes/navbar.scss */
+.navbar-container .border-navbar {
+  height: 50px;
+}
+/* line 6, ../sass/includes/navbar.scss */
+.navbar-container .navbar-default {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  z-index: 99;
+}
+/* line 13, ../sass/includes/navbar.scss */
+.navbar-container .navbar-toggle {
+  float: left;
+  margin-left: 1em;
+  border: none;
+}
+/* line 20, ../sass/includes/navbar.scss */
+.navbar-container .navbar-toggle:hover .icon-bar, .navbar-container .navbar-toggle:focus .icon-bar {
+  background-color: #f5f5f5;
+}
+/* line 25, ../sass/includes/navbar.scss */
+.navbar-container .settings {
+  float: right;
+  position: relative;
+  display: inline;
+}
+/* line 30, ../sass/includes/navbar.scss */
+.navbar-container .settings .row {
+  display: inline-block;
+  padding: 10px 0px 4px 0px;
+  float: left;
+}
+/* line 37, ../sass/includes/navbar.scss */
+.navbar-container .navbar-logo {
+  padding: 0.9em;
+}
+/* line 40, ../sass/includes/navbar.scss */
+.navbar-container .navbar-logo img {
+  max-height: 27px;
+}
+/* line 46, ../sass/includes/navbar.scss */
+.navbar-container .fa {
+  font-size: 1.4em;
+}
+/* line 50, ../sass/includes/navbar.scss */
+.navbar-container .collapse-menu {
+  float: left;
+  position: relative;
+}
+/* line 55, ../sass/includes/navbar.scss */
+.navbar-container .dropdown-menu {
+  border-radius: 0;
+  font-size: 1em;
+}
+/* line 60, ../sass/includes/navbar.scss */
+.navbar-container span {
+  font-family: 'Open Sans';
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 68, ../sass/includes/navbar.scss */
+  .settings {
+    float: left;
+  }
+  /* line 71, ../sass/includes/navbar.scss */
+  .settings .row {
+    float: left !important;
+    display: block !important;
+  }
+  /* line 75, ../sass/includes/navbar.scss */
+  .settings .row .col-md-1, .settings .row .col-md-2 {
+    position: static;
+  }
+
+  /* line 82, ../sass/includes/navbar.scss */
+  .xs-menu-navbar .navbar-collapse .navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  /* line 87, ../sass/includes/navbar.scss */
+  .xs-menu-navbar .navbar-collapse .navbar-nav li {
+    margin: none;
+  }
+}
+/* line 1, ../sass/includes/cookies.scss */
+.cookies-container {
+  background: #60747C;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+  z-index: 120;
+}
+/* line 13, ../sass/includes/cookies.scss */
+.cookies-container .cookies-content {
+  margin: 1em;
+}
+/* line 16, ../sass/includes/cookies.scss */
+.cookies-container .cookies-content button {
+  font-size: 0.7em;
+  border-radius: 0;
+}
+/* line 21, ../sass/includes/cookies.scss */
+.cookies-container .cookies-content .cookies-text {
+  margin-top: 0.4em;
+}
+/* line 25, ../sass/includes/cookies.scss */
+.cookies-container .cookies-content a {
+  color: white;
+  font-size: 1em;
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  /* line 33, ../sass/includes/cookies.scss */
+  .cookies-container .cookies-text {
+    margin-bottom: 1em;
+  }
+}
+
+/* line 1, ../sass/includes/footer.scss */
+.footer-container {
+  margin: 2em;
+}
+
+/* Fonts */

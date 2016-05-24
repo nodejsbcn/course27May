@@ -1,0 +1,91 @@
+<div class="container-fluid navbar-container" ng-controller="NavbarController">
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="row border-navbar">
+				<nav class="navbar-default" role="navigation">
+					<div class="hidden-xs hidden-sm col-md-1 navbar-logo">
+						<a ui-sref="home">
+							<img src="./assets/img/logo_lineas_verde.png" alt="NodeJsBarcelona" class="img-responsive">
+						</a>
+					</div>
+					<button type="button" class="navbar-toggle btn-link" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="container-fluid">
+						<div class="settings">
+								<div class="row">
+									<div class="col-lg-2 col-md-2 col-xs-2">
+										<i class="fa fa-user dropdown-toggle btn" id="dropdown-settings" data-toggle="dropdown">
+											<span>{{name}}</span>
+										</i>
+										<ul class="dropdown-menu" aria-labelledby="dropdown-settings">
+											<li>
+												<a ui-sref="profile">
+													<i class="fa fa-cog"></i>
+													{{'PROFILE' | translate}}
+												</a>
+											</li>
+											<!--li ng-controller="LogoutController">
+												<a href="" ng-click="logout()">
+													<i class="fa fa-sign-out"></i>
+													{{'LOGOUT' | translate}}
+												</a>
+											</li-->
+										</ul>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-1">
+										<i class="fa fa-language dropdown-toggle btn" id="dropdown-language" data-toggle="dropdown">
+											<span>{{'LANGUAGE' | translate}}</span>
+										</i>
+										<ul class="dropdown-menu" aria-labelledby="dropdown-language">
+											<li>
+												<a href="" ng-click="changeLanguage('ca-ES')">
+													Català
+												</a>
+											</li>
+											<li>
+												<a href="" ng-click="changeLanguage('en-US')">
+													English
+												</a>
+											</li>
+											<li>
+												<a href="" ng-click="changeLanguage('es-ES')">
+													Español
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+						</div>
+						<div class="collapse navbar-collapse navbar-ex1-collapse hidden-xs hidden-sm" id="bs-example-navbar-collapse-1">
+							<div class="collapse-menu">
+								<ul class="nav navbar-nav">
+									<li ng-class="{'active':message}"><a ui-sref="message">All Messages</a></li>
+									<li ng-class="{'active':timeline}"><a ui-sref="timeline">Timeline</a></li>
+									<li ng-class="{'active':person}"><a ui-sref="person">My Friends</a></li>
+									<li ng-class="{'active':activity}"><a ui-sref="activity">Activity</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="xs-menu-navbar">
+						<div class="collapse navbar-collapse navbar-ex1-collapse" id="bs-example-navbar-collapse-1">
+							<div class="collapse-menu hidden-sm hidden-md hidden-lg">
+								<ul class="nav navbar-nav">
+									<li ng-class="{'active':timeline}" class="col-xs-12"><a ui-sref="timeline">Timeline</a></li>
+									<li ng-class="{'active':friends}" class="col-xs-12"><a ui-sref="friends">My Friends</a></li>
+									<li ng-class="{'active':activity}" class="col-xs-12"><a ui-sref="activity">Activity</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>

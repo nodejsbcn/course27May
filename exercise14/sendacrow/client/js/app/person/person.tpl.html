@@ -1,0 +1,15 @@
+<div ng-controller="PersonController" class="container">
+	<div class="alert alert-success" ng-show="personSaved" role="alert">{{successMessage}}</div>
+	<div class="row">
+		<div class="hidden-xs col-md-3 col-sm-4 persons-title">
+			<h2>PERSONS</h2>
+			<div class="col-xs-12 panel-separator"></div>
+			<div ng-repeat="user in users" ng-show="user.id !== userData.id">
+				{{user.nickname}}
+				<button type="button" class="btn btn-sm" ng-click="getMessages(user.id)">
+					<a ui-sref="message">Get user messages</a>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

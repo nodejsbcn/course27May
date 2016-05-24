@@ -1,6 +1,7 @@
 var app = angular.module('DaikiriApp', [
     'ngResource', 
     'lbServices',
+    'vendor',
     'ui.bootstrap',
     'ui.router', 
     'pascalprecht.translate',
@@ -12,13 +13,13 @@ app.config(['$locationProvider', '$stateProvider', '$urlRouterProvider', functio
 
 	$locationProvider.html5Mode(true);
 
-	$urlRouterProvider.otherwise('/home');
+	$urlRouterProvider.otherwise('/register');
 
 	$stateProvider
-		.state('home', {
-			url: '/home',
-			templateUrl: 'app/home/home.tpl.html',
-			controller: 'HomeController',
+		.state('register', {
+			url: '/register',
+			templateUrl: 'app/register/register.tpl.html',
+			controller: 'RegisterController',
 			requireAuth: false
 		}).state('login', {
 			url: '/login',
@@ -51,7 +52,7 @@ app.config(['$httpProvider', '$translateProvider',function($httpProvider, $trans
         $httpProvider.interceptors.push(function ($location, $q) {
                 return {
                     'request': function (request) {
-                        if (!localStorage.getItem('sessionId') && ($location.path() !== '/home')) {
+                        if (!localStorage.getItem('sessionId') && ($location.path() !== '/register')) {
                             if ($location.path() === '/login') {
                                 $location.path('/login');
                             } else if ($location.path() === '/signup') {
@@ -61,16 +62,16 @@ app.config(['$httpProvider', '$translateProvider',function($httpProvider, $trans
                             } else if ($location.path() === '/person') {
                                 $location.path('/person');
                             } else {
-                                $location.path('/home');
+                                $location.path('/register');
                             }
-                        } else if(localStorage.getItem('sessionId') && (($location.path() === '/login') ||  ($location.path() === '/signup') ||  ($location.path() === '/home'))) {
+                        } else if(localStorage.getItem('sessionId') && (($location.path() === '/login') ||  ($location.path() === '/signup') ||  ($location.path() === '/register'))) {
                             $location.path('/dashboard');       
                         }
                         return request;
                     },
                     'responseError': function (rejection) {
-                        if (rejection.status === 401 && $location.path() !== '/home') {             
-                            $location.path('/home');
+                        if (rejection.status === 401 && $location.path() !== '/register') {             
+                            $location.path('/register');
                         }
                         return $q.reject(rejection);         
                     }

@@ -1,7 +1,8 @@
-app.controller('PersonController', ['$scope', 'personService', function($scope, personService) {
+app.controller('PersonController', ['$scope', 'lodash', 'UserSessionProvider', 'personService', function($scope, lodash, UserSessionProvider, personService) {
 	'use strict';
 
 	$scope.personsList = function() {
+		$scope.userData = UserSessionProvider.getUserData();
 		personService.getPersons().then(function(result) {
 			$scope.users = result; 	
 		}, function (error) {
@@ -9,35 +10,10 @@ app.controller('PersonController', ['$scope', 'personService', function($scope, 
 		});
 	};
 
-	$scope.getPerson = function(personId) {
-		var person = {
-			id: personId
-		}
-		personService.getPerson(person).then(function(result) {
-			$scope.person =  result;	
-		}, function(error) {
-			$scope.error = error;
-		});
+	$scope.addFriend = function(friendId) {
+		$scope.userData = UserSessionProvider.getUserData();
 	}
 
 	$scope.personsList();
 
-	$scope.savePerson = function() {
-		var personBody = {
-			"name": $scope.personName,
-			"nickname": $scope.personNick,
-			"email": $scope.personEmail
-		}
-		personService.setPerson(personBody).then(function() {
-			$scope.successMessage = 'Saved correctly';
-			$scope.personSaved = true;
-			$scope.personsList();
-			$scope.personName = '';
-			$scope.personNick = '';
-			$scope.PersonEmail = '';
-		}, function (error) {
-			$scope.alertMessage = 'Error on save';
-			$scope.messageError = true;
-		})
-	}
 }]);

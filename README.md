@@ -2,7 +2,7 @@
 NodeJS+Strongloop course at NodeJS Barcelona Meetup (27 May 2016)
 
 You can see the video presentation here:
-http://www.screencast.com/t/ZkW2wzrdY
+https://www.youtube.com/watch?v=9W8mQmabEVU
 
 ## 1. Installation
 https://github.com/nodejsbcn/course27May/tree/master/exercise01
